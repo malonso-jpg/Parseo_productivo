@@ -1,0 +1,9 @@
+boto3
+botocore
+jmespath
+lxml
+mysql-connector-python
+python-dateutil
+s3transfer
+six
+urllib3

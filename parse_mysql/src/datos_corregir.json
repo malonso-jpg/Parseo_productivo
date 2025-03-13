@@ -1,0 +1,51 @@
+{
+    "replace": [
+        "xmlns:schemaLocation=\"[^\"]*\"||",
+        "http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd||http://www.w3.org/2001/XMLSchema-instance",
+        "xmlns:pago20=\"http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd\"||xmlns:pago20=\"http://www.sat.gob.mx/Pagos20\"",
+        "xmlns:pago10=\"http://www.sat.gob.mx/Pagos http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos10.xsd\"||xmlns:pago10=\"http://www.sat.gob.mx/Pagos\"",
+        "xmlns:schemaLocation||xsi:schemaLocation",
+        "io_internet/cfd/tipoDatos/tdCFDI||",
+        "[\\U00010000-\\U0010ffff]||"
+    ],
+    "quitar_nodos": [
+        "<cartaporte20:CartaPorte[^>]*>(.*?)</cartaporte20:CartaPorte>||CartaPorte",
+        "<ecc12:EstadoDeCuentaCombustible[^>]*>(.*?)</ecc12:EstadoDeCuentaCombustible>||EstadoDeCuentaCombustible"
+    ],
+    "nodos": [
+        "EstadoDeCuentaCombustible",
+        "TuristaPasajeroExtranjero",
+        "ComercioExterior",
+        "GastosHidrocarburos",
+        "IngresosHidrocarburos",
+        "CartaPorte",
+        "acreditamientoIEPS",
+        "Aerolineas",
+        "obrasarteantiguedades",
+        "certificadodedestruccion",
+        "CFDIRegistroFiscal",
+        "ConsumoDeCombustibles",
+        "detallista",
+        "Divisas",
+        "Donatarias",
+        "EstadoDeCuentaBancario",
+        "EstadoDeCuentaCombustible",
+        "instEducativas",
+        "ImpuestosLocales",
+        "INE",
+        "LeyendasFiscales",
+        "NotariosPublicos",
+        "PagoEnEspecie",
+        "PFintegranteCoordinado",
+        "PrestadoresDeServiciosDeCFDSP",
+        "PrestadoresDeServiciosDeCFD",
+        "renovacionysustitucionvehiculos",
+        "parcialesconstruccion",
+        "Complemento_SPEI",
+        "PorCuentadeTerceros",
+        "t_CURP",
+        "ValesDeDespensa",
+        "VehiculoUsado",
+        "VentaVehiculos"
+    ]
+}
